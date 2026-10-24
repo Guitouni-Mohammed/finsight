@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# environment (keep .env.example)
+.env
+.env*.local
+
+# Supabase CLI local state
+supabase/.temp/
+supabase/.branches/
+
+# logs and caches
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+coverage/
+*.traineddata
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

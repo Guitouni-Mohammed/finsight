@@ -1,0 +1,19 @@
+# Same bytes on every OS: text files keep LF line endings in the repository
+# and in every checkout, Windows included (Git for Windows would otherwise
+# convert them to CRLF).
+* text=auto eol=lf
+
+# Binary files are never converted. Git's automatic detection takes an
+# ASCII-only PDF, like the digital sample, for text and would alter it.
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.wasm binary
+*.gz binary
+*.zip binary

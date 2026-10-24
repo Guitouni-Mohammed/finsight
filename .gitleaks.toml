@@ -1,0 +1,12 @@
+# gitleaks configuration: the default rules, plus the placeholder values used in CI and tests.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholders and documented public test keys (not secrets)"
+regexes = [
+  '''sb_(publishable|secret)_ci_placeholder_0+''',
+  '''sb_(publishable|secret)_0123456789abcdefghij(klmn)?''',
+  # Cloudflare Turnstile's documented test keys (always pass / always fail).
+  '''[123]x0{20,}[A-F]{2}''',
+]
